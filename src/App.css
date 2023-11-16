@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu {
+  width: 100%;
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+  height: 48px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background-color: orange;
+}
+
+.nav-list__item {
+  display: inline-block;
+}
+
+.nav-list__item--no-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list__item--no-mobile {
+      display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link {
+  text-decoration: none;
+  color:black;
+  font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1366px){
+  .nav-link {
+      font-size: 1.25rem;
+  }
+}
+
+.nav-link:hover {
+  color: rgb(128, 76, 180);
+}
+
+.hero {
+  background-color: green;
+
+  height: 768px;
+  width: 100%;
+  background-size: cover;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content__title {
+  font-size: 2rem;
+  font-family: 'Halant', serif;
+  font-weight: bold;
+  color: black;
+}
+
+.hero-content__text {
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+  margin: 20px 0;
+}
+
+.hero-content__button {
+  background-color: rebeccapurple;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 20px;
+}
+
+.hero-content__button:hover {
+  background-color: rgb(128, 76, 180);
+}
+
+.info, .recipes, .testimonials {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1366px) {
+  .info, .recipes, .testimonials {
+      max-width: 1024px;
+  }
+}
+
+.info {
+
+  background-color: teal;
+}
+
+.recipes-container {
+
+  background-color: teal
+}
+
+@media screen and (min-width: 1366px){
+  .info {
+      margin: 80px;
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .info, .recipes-container {
+  }
+}
+
+.info__heading {
+  font-family: 'Halant';
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 0px;
+
+  line-height: 1.15;
+}
+
+@media screen and (min-width: 600px){
+  .info__heading {
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .info__heading {
+      font-size: 2.25rem;
+  }
+}
+
+.info__description {
+  text-transform: uppercase;
+  color: gray;
+  margin: 10px 0;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px){
+  .info__description {
+      font-size: 1rem;
+  }
+}
+
+.info__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 1.5;
+  flex-direction: column;
+}
+
+.content-block {
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 1366px) {
+  .content-block {
+      margin: 20px 40px;
+  }
+  .info__content {
+      flex-direction: row;
+  }
+  .content-block:first-child {
+      margin-left: 0;
+  }
+  
+  .content-block:last-child {
+      margin-right: 0;
+  }
+}
+
+.recipes-container {
+  background-size: cover;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .recipes {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .recipes {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.recipes__card {
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.recipes__card:hover {
+  box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+}
+
+.card-title {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  background: white;
+}
+
+.testimonials {
+  text-align: center;
+  background-color: lavender;
+}
+
+.testimonials__heading {
+  font-family: 'Halant', serif;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.testimonials__description {
+  color: gray;
+  margin: 10px 0;
+}
+
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials__content {
+      flex-direction: row;
+  }
+}
+
+.testimonial {
+  display: inline-block;
+  margin: 20px;
+}
+
+.testimonial__name::before {
+  display: block;
+  content: '\201C';
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: -10px;
+}
+.testimonial__name {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.testimonial__text {
+  line-height: 1.5;
+  margin: 15px 50px;
+}
+.FAQ{
+  background-color: pink;
+}
+.FAQplaceholder{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 0px;
+  padding: 16px;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.footer-menu {
+  background: gainsboro;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-list {
+  margin: 0;
+  padding: 24px;
+}
+
+.footer-list__item {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.footer-list__item, .footer-link {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #676767;
+}
+
+.footer-link:hover {
+  color:rgb(128, 76, 180);
+  text-decoration: none;
 }
