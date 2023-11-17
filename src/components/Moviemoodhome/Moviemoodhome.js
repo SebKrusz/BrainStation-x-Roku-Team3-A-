@@ -1,37 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Moviemoodhome.scss";
 
 export const Moviemoodhome = () => {
-  const [selectedGenre, setSelectedGenre] = useState("");
-  const initialGenres = [
-    "Action",
-    "Comedy",
-    "Drama",
-    "Sci-Fi",
-    "Horror",
-    "Romance",
-    "Thriller",
-    "Animation",
-  ];
-
-  const handleGenreChange = event => {
-    setSelectedGenre(event.target.value);
-  };
-
   return (
     <div>
-      <h1>Ready to choose your movie mood?</h1>
-      <label>Choose a genre:</label>
-      <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
-        {initialGenres.map((genre, index) => (
-          <option key={index} value={genre}>
-            {genre}
-          </option>
-        ))}
-      </select>
-      <Link to={`/Moviemood/${selectedGenre}`}>
-        <button>Go to Other Page</button>
+      <h3>Say goodbye to endless scrolling and hello to personalized movie magic</h3>
+      <p>
+        Our unique assessment is your passport to a tailored movie experience. By understanding your
+        current vibe, we handpick a selection of films perfectly aligned with your mood.
+      </p>
+      <Link to="/Moviemood">
+        <button>FIND A MOVIE TO WATCH</button>
       </Link>
     </div>
   );
