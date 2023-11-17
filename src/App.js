@@ -2,6 +2,7 @@
 // import axios from "axios";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage/HomePage";
+import { Moviemoodpage } from "./pages/Moviemoodpage/Moviemoodpage";
 
 function App() {
   // const [movies, setMovies] = useState({});
@@ -52,6 +53,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/Moviemood/:genre" element={<Moviemoodpage />} />
         </Routes>
       </BrowserRouter>
     </>
