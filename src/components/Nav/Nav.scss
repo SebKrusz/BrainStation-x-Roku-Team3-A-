@@ -1,0 +1,73 @@
+.logo {
+  height: 48px;
+}
+.menu {
+}
+
+.nav-list {
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #091d42;
+}
+
+.nav-list__item {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+.nav-list__item--no-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list__item--no-mobile {
+    display: block;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1366px) {
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
+
+.nav-link:hover {
+  color: rgb(128, 76, 180);
+}
+
+.logo {
+  background-color: blue;
+}
+
+.nav-link-logo {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  font-size: 28px;
+}
+.nav__button {
+  position: absolute;
+  right: 5%;
+  top: 20px;
+  height: 30px;
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 2rem;
+  width: 100px;
+  border: none;
+}
