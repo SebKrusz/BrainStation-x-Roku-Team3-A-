@@ -19,7 +19,7 @@ export const Moviemoodhome = () => {
         Our unique assessment is your passport to a tailored movie experience. By understanding your
         current vibe, we handpick a selection of films perfectly aligned with your mood.
       </p>
-      <Link to="/Moviemood" className="button-link">
+      <Link to="/genre/Action" className="button-link">
         <button className="find-movie-button">FIND A MOVIE TO WATCH</button>
       </Link>
       <div className="image-gallary">
