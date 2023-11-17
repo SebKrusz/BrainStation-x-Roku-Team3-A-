@@ -9,7 +9,9 @@ export const Hero = () => {
       <div className="hero">
         <div className="hero__text">
           <h1 className="hero__text--title">Find something to watch before your food gets cold.</h1>
-          <h4>Streaming recommendations catered to you in a convenient way.</h4>
+          <h4 className="hero__text--slogan">
+            Streaming recommendations catered to you through a whole new experience
+          </h4>
         </div>
         <div className="hero__image">
           <img className="hero__image--image" src={image} alt="" />
