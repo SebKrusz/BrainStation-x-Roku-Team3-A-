@@ -1,0 +1,234 @@
+[
+  {
+    "genre": "Action",
+    "movies": [
+      {
+        "title": "Die Hard",
+        "year": 1988,
+        "image": "die_hard.jpg",
+        "description": "Yippee ki-yay, motherf*****!"
+      },
+      {
+        "title": "Mad Max: Fury Road",
+        "year": 2015,
+        "image": "mad_max.jpg",
+        "description": "Witness me!"
+      },
+      {
+        "title": "The Dark Knight",
+        "year": 2008,
+        "image": "dark_knight.jpg",
+        "description": "Why so serious?"
+      },
+      {
+        "title": "Inception",
+        "year": 2010,
+        "image": "inception.jpg",
+        "description": "Your mind is the scene of the crime."
+      }
+    ]
+  },
+  {
+    "genre": "Comedy",
+    "movies": [
+      {
+        "title": "Anchorman: The Legend of Ron Burgundy",
+        "year": 2004,
+        "image": "anchorman.jpg",
+        "description": "Stay classy, San Diego."
+      },
+      {
+        "title": "Superbad",
+        "year": 2007,
+        "image": "superbad.jpg",
+        "description": "Come for the party, stay for the friendship."
+      },
+      {
+        "title": "Bridesmaids",
+        "year": 2011,
+        "image": "bridesmaids.jpg",
+        "description": "Best friends don't let you do crazy things alone."
+      },
+      {
+        "title": "The Hangover",
+        "year": 2009,
+        "image": "hangover.jpg",
+        "description": "What happens in Vegas stays in Vegas."
+      }
+    ]
+  },
+  {
+    "genre": "Drama",
+    "movies": [
+      {
+        "title": "The Shawshank Redemption",
+        "year": 1994,
+        "image": "shawshank.jpg",
+        "description": "Fear can hold you prisoner. Hope can set you free."
+      },
+      {
+        "title": "Forrest Gump",
+        "year": 1994,
+        "image": "forrest_gump.jpg",
+        "description": "Life is like a box of chocolates."
+      },
+      {
+        "title": "The Godfather",
+        "year": 1972,
+        "image": "godfather.jpg",
+        "description": "I'm gonna make him an offer he can't refuse."
+      },
+      {
+        "title": "Schindler's List",
+        "year": 1993,
+        "image": "schindlers_list.jpg",
+        "description": "Whoever saves one life, saves the world entire."
+      }
+    ]
+  },
+  {
+    "genre": "Sci-Fi",
+    "movies": [
+      {
+        "title": "Blade Runner",
+        "year": 1982,
+        "image": "blade_runner.jpg",
+        "description": "The future is now."
+      },
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "image": "matrix.jpg",
+        "description": "Reality is a thing of the past."
+      },
+      {
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "year": 2004,
+        "image": "eternal_sunshine.jpg",
+        "description": "Remember everything. Forgive nothing."
+      },
+      {
+        "title": "Interstellar",
+        "year": 2014,
+        "image": "interstellar.jpg",
+        "description": "Mankind was born on Earth. It was never meant to die here."
+      }
+    ]
+  },
+  {
+    "genre": "Horror",
+    "movies": [
+      {
+        "title": "The Exorcist",
+        "year": 1973,
+        "image": "exorcist.jpg",
+        "description": "The power of Christ compels you!"
+      },
+      {
+        "title": "The Shining",
+        "year": 1980,
+        "image": "shining.jpg",
+        "description": "Here's Johnny!"
+      },
+      {
+        "title": "Get Out",
+        "year": 2017,
+        "image": "get_out.jpg",
+        "description": "Just because you're invited, doesn't mean you're welcome."
+      },
+      {
+        "title": "A Nightmare on Elm Street",
+        "year": 1984,
+        "image": "nightmare.jpg",
+        "description": "Whatever you do, don't fall asleep."
+      }
+    ]
+  },
+  {
+    "genre": "Romance",
+    "movies": [
+      {
+        "title": "The Notebook",
+        "year": 2004,
+        "image": "notebook.jpg",
+        "description": "Behind every great love is a great story."
+      },
+      {
+        "title": "Pride and Prejudice",
+        "year": 2005,
+        "image": "pride_prejudice.jpg",
+        "description": "You have bewitched me, body and soul."
+      },
+      {
+        "title": "La La Land",
+        "year": 2016,
+        "image": "la_la_land.jpg",
+        "description": "Here's to the ones who dream."
+      },
+      {
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "year": 2004,
+        "image": "eternal_sunshine.jpg",
+        "description": "Love is a four-letter word."
+      }
+    ]
+  },
+  {
+    "genre": "Thriller",
+    "movies": [
+      {
+        "title": "Se7en",
+        "year": 1995,
+        "image": "se7en.jpg",
+        "description": "Seven deadly sins. Seven ways to die."
+      },
+      {
+        "title": "Gone Girl",
+        "year": 2014,
+        "image": "gone_girl.jpg",
+        "description": "You don't know what you've got 'til it's gone."
+      },
+      {
+        "title": "The Silence of the Lambs",
+        "year": 1991,
+        "image": "silence_lambs.jpg",
+        "description": "It places the lotion in the basket."
+      },
+      {
+        "title": "Memento",
+        "year": 2000,
+        "image": "memento.jpg",
+        "description": "Some memories are best forgotten."
+      }
+    ]
+  },
+  {
+    "genre": "Animation",
+    "movies": [
+      {
+        "title": "Toy Story",
+        "year": 1995,
+        "image": "toy_story.jpg",
+        "description": "You've got a friend in me."
+      },
+      {
+        "title": "Finding Nemo",
+        "year": 2003,
+        "image": "finding_nemo.jpg",
+        "description": "Just keep swimming."
+      },
+      {
+        "title": "Spirited Away",
+        "year": 2001,
+        "image": "spirited_away.jpg",
+        "description": "Once you meet someone, you never really forget them."
+      },
+      {
+        "title": "The Lion King",
+        "year": 1994,
+        "image": "lion_king.jpg",
+        "description": "Hakuna Matata. It means no worries for the rest of your days."
+      }
+    ]
+  }
+]
