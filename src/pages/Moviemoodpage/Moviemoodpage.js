@@ -31,20 +31,18 @@ export const Moviemoodpage = () => {
 
   return (
     <div>
-      <Nav />
-      <div>
-        <h1>Choose a genre to see movies:</h1>
-        <label>Select a genre:</label>
-        <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
-          <option value="" disabled>
-            -- Select Genre --
-          </option>
-          <option value="Action">Action</option>
-          <option value="Comedy">Comedy</option>
-          <option value="Thriller">Thriller</option>
-          <option value="Romance">Romance</option>
-          <option value="Documentaries">Documentaries</option>
-        </select>
+      <h1>Choose a genre to see movies:</h1>
+      <label>Select a genre:</label>
+      <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
+        <option value="" disabled>
+          -- Select Genre --
+        </option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Romance">Romance</option>
+        <option value="Documentaries">Documentaries</option>
+      </select>
 
       {selectedGenre && (
         <div>
