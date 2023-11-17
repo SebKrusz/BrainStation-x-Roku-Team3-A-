@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Nav } from "../../components/Nav/Nav";
+import { Footer } from "../../components/footer/Footer";
 
 export const Moviemoodpage = () => {
   const [movieData, setMovieData] = useState([]);
@@ -28,34 +30,38 @@ export const Moviemoodpage = () => {
 
   return (
     <div>
-      <h1>Choose a genre to see movies:</h1>
-      <label>Select a genre:</label>
-      <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
-        <option value="" disabled>
-          -- Select Genre --
-        </option>
-        <option value="Action">Action</option>
-        <option value="Comedy">Comedy</option>
-        <option value="Thriller">Thriller</option>
-        <option value="Romance">Romance</option>
-        <option value="Documentaries">Documentaries</option>
-      </select>
+      <Nav />
+      <div>
+        <h1>Choose a genre to see movies:</h1>
+        <label>Select a genre:</label>
+        <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
+          <option value="" disabled>
+            -- Select Genre --
+          </option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Romance">Romance</option>
+          <option value="Documentaries">Documentaries</option>
+        </select>
 
-      {selectedGenre && (
-        <div>
-          <h2>Movies in the {selectedGenre} genre:</h2>
-          <ul>
-            {movieData.map(movie => (
-              <li key={movie.title}>
-                <h3>{movie.title}</h3>
-                <p>Year: {movie.year}</p>
-                <img src={movie.image} alt={movie.title} />
-                <p>{movie.description}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+        {selectedGenre && (
+          <div>
+            <h2>Movies in the {selectedGenre} genre:</h2>
+            <ul>
+              {movieData.map(movie => (
+                <li key={movie.title}>
+                  <h3>{movie.title}</h3>
+                  <p>Year: {movie.year}</p>
+                  <img src={movie.image} alt={movie.title} />
+                  <p>{movie.description}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+      <Footer />
     </div>
   );
 };
