@@ -28,7 +28,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="footer__subscribe">
-          <button className="footer__email-button">Enter your email</button>
+          <input className="footer__email-button" placeholder="Enter your email!"></input>
           <ul>
             <li className="footer-link">PRIVACY</li>
             <li className="footer-link">COOKIES</li>
