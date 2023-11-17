@@ -1,0 +1,17 @@
+@use "./fonts" as *;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-family: barlow;
+  font-weight: 300;
+}
+body {
+  background-color: #3e4348;
+  color: white;
+  font-family: rubik;
+}
