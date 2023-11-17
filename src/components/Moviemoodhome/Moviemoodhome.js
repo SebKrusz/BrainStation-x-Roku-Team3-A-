@@ -13,6 +13,9 @@ export const Moviemoodhome = () => {
       <Link to="/Moviemood">
         <button>FIND A MOVIE TO WATCH</button>
       </Link>
+      <p>
+        People spend an average on 7.4 minutes deciding what to watch. We’ll make it easier for you.
+      </p>
     </div>
   );
 };
