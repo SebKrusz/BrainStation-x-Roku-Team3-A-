@@ -3,6 +3,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { ThemePage } from "./pages/ThemePage/ThemePage";
+import { Moviemoodpage } from "./pages/Moviemoodpage/Moviemoodpage";
 
 function App() {
   // const [movies, setMovies] = useState({});
@@ -54,6 +55,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/theme" element={<ThemePage />} />
+          <Route path="/Moviemood/:genre" element={<Moviemoodpage />} />
         </Routes>
       </BrowserRouter>
     </>
