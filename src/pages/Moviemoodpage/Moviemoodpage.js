@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export const Moviemoodpage = () => {
+  const staticHost = "http://localhost:8080/images/";
   const [movieData, setMovieData] = useState([]);
   const { selectedGenre } = useParams();
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ export const Moviemoodpage = () => {
               <li key={movie.title}>
                 <h3>{movie.title}</h3>
                 <p>Year: {movie.year}</p>
-                <img src={movie.image} alt={movie.title} />
+                <img className="image" src={`${staticHost}${movie.image}`} alt={movie.title} />
                 <p>{movie.description}</p>
               </li>
             ))}
