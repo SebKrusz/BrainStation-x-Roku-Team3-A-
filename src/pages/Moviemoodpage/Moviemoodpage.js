@@ -5,6 +5,7 @@ import { Nav } from "../../components/Nav/Nav";
 import { Footer } from "../../components/footer/Footer";
 
 export const Moviemoodpage = () => {
+  const staticHost = "http://localhost:8080/images/";
   const [movieData, setMovieData] = useState([]);
   const { selectedGenre } = useParams();
   const navigate = useNavigate();
@@ -45,23 +46,21 @@ export const Moviemoodpage = () => {
           <option value="Documentaries">Documentaries</option>
         </select>
 
-        {selectedGenre && (
-          <div>
-            <h2>Movies in the {selectedGenre} genre:</h2>
-            <ul>
-              {movieData.map(movie => (
-                <li key={movie.title}>
-                  <h3>{movie.title}</h3>
-                  <p>Year: {movie.year}</p>
-                  <img src={movie.image} alt={movie.title} />
-                  <p>{movie.description}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-      <Footer />
+      {selectedGenre && (
+        <div>
+          <h2>Movies in the {selectedGenre} genre:</h2>
+          <ul>
+            {movieData.map(movie => (
+              <li key={movie.title}>
+                <h3>{movie.title}</h3>
+                <p>Year: {movie.year}</p>
+                <img className="image" src={`${staticHost}${movie.image}`} alt={movie.title} />
+                <p>{movie.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
