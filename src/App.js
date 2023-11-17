@@ -56,7 +56,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/theme" element={<ThemePage />} />
-          <Route path="/Moviemood" element={<Moviemoodpage />} />
+          <Route path="/genre/:selectedGenre" element={<Moviemoodpage />} />
         </Routes>
       </BrowserRouter>
     </>
