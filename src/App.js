@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { ThemePage } from "./pages/ThemePage/ThemePage";
 import { Moviemoodpage } from "./pages/Moviemoodpage/Moviemoodpage";
+import "./styles/global.scss";
 
 function App() {
   // const [movies, setMovies] = useState({});

@@ -3,6 +3,8 @@ import "./Footer.scss";
 import facebook from "../../assets/images/icons/facebook.png";
 import twitter from "../../assets/images/icons/twitter.png";
 import instagram from "../../assets/images/icons/instagram.png";
+import "../../styles/global.scss";
+
 export const Footer = () => {
   return (
     <section className="footer">
