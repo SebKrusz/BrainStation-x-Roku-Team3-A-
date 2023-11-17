@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Nav } from "../../components/Nav/Nav";
 import { Footer } from "../../components/footer/Footer";
+import "./Moviemoodpage.scss";
 
 export const Moviemoodpage = () => {
   const staticHost = "http://localhost:8080/images/";
@@ -31,34 +32,41 @@ export const Moviemoodpage = () => {
 
   return (
     <div>
-      <h1>Choose a genre to see movies:</h1>
-      <label>Select a genre:</label>
-      <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
-        <option value="" disabled>
-          -- Select Genre --
-        </option>
-        <option value="Action">Action</option>
-        <option value="Comedy">Comedy</option>
-        <option value="Thriller">Thriller</option>
-        <option value="Romance">Romance</option>
-        <option value="Documentaries">Documentaries</option>
-      </select>
-
-      {selectedGenre && (
-        <div>
-          <h2>Movies in the {selectedGenre} genre:</h2>
-          <ul>
-            {movieData.map(movie => (
-              <li key={movie.title}>
-                <h3>{movie.title}</h3>
-                <p>Year: {movie.year}</p>
-                <img className="image" src={`${staticHost}${movie.image}`} alt={movie.title} />
-                <p>{movie.description}</p>
-              </li>
-            ))}
-          </ul>
+      <Nav />
+      <div>
+        <div className="Header">
+          <h1>Choose a genre to see movies:</h1>
+          <label>Select a genre:</label>
+          <select id="genre" name="genre" value={selectedGenre} onChange={handleGenreChange}>
+            <option value="" disabled>
+              -- Select Genre --
+            </option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Romance">Romance</option>
+            <option value="Documentaries">Documentaries</option>
+          </select>
         </div>
-      )}
+        {selectedGenre && (
+          <div className="container">
+            <h2>Movies in the {selectedGenre} genre:</h2>
+            <div className="container__movies">
+              <ul>
+                {movieData.map(movie => (
+                  <li key={movie.title}>
+                    <h3>{movie.title}</h3>
+                    <p>Year: {movie.year}</p>
+                    <img className="image" src={`${staticHost}${movie.image}`} alt={movie.title} />
+                    <p>{movie.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+      </div>
+      <Footer />
     </div>
   );
 };

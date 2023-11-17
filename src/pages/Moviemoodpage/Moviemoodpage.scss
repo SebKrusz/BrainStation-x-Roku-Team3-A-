@@ -12,7 +12,7 @@ body {
 
 /* Header styles */
 h1 {
-  color: #333;
+  color: white;
 }
 
 /* Select box styles */
@@ -29,7 +29,7 @@ select {
 
 /* Movie list styles */
 h2 {
-  color: #333;
+  color: white;
   margin-top: 20px;
 }
 
@@ -45,15 +45,33 @@ li {
 
 /* Movie details styles */
 h3 {
-  color: #333;
+  color: white;
 }
 
 p {
   margin: 10px 0;
+  color: white;
 }
 
-img {
-  max-width: 100%;
+.image {
+  max-width: 24vw;
   height: auto;
   margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__movies {
+    display: flex;
+  }
+}
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#genre {
+  border-radius: 20px;
 }
