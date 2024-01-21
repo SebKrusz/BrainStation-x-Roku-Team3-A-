@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# About Our Team's Achievements
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 **Greetings from our Software Development Team!** Below are some highlights of our achievements and collaborations.
+(Sebastian Kruszewski, Jonathan Battista, Nate Paradiso)
+https://www.linkedin.com/in/sebastian-kruszewski/
+https://www.linkedin.com/in/jonathan-battista/
+https://www.linkedin.com/in/nate-paradiso/
 
-## Available Scripts
+## Notable Engagements
 
-In the project directory, you can run:
+- 🏆 **Hackathon Triumph:** Proudly participated in the winning design team at the Industry Day hackathon with an esteemed industry partner (Roku Inc.). It was an exhilarating experience collaborating with exceptional talents.
 
-### `npm start`
+## Skill Development
+- 🎨 **Collaboration with UX Teams:** Successfully collaborated with dedicated UX teams, integrating design thinking and user-centric approaches into our software development process. This synergy enhanced the overall user experience of our projects
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🖥️ **Technical Expertise:** Continuously honing our skills in software development, contributing meaningfully to various projects.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔄 **Collaborative Development:** Thrived in an environment that encourages teamwork, learning, and shared success.
 
-### `npm test`
+## Collaborative Spirit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🤝 **Team Dynamics:** Embracing the spirit of collaboration, we've had the privilege of working with exceptional individuals, fostering a culture of innovation and excellence.
 
-### `npm run build`
+- 💡 **Mentorship:** Grateful for the mentorship received, a guiding force in navigating the intricacies of software development.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Links to UX Team:
+https://www.linkedin.com/in/inescanjura/
+https://www.linkedin.com/in/chansteffi/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
