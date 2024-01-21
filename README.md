@@ -1,10 +1,15 @@
 # About Our Team's Achievements
 
 🚀 **Greetings from our Software Development Team!** Below are some highlights of our achievements and collaborations.
+<br>
 (Sebastian Kruszewski, Jonathan Battista, Nate Paradiso)
+<br>
 https://www.linkedin.com/in/sebastian-kruszewski/
+<br>
 https://www.linkedin.com/in/jonathan-battista/
+<br>
 https://www.linkedin.com/in/nate-paradiso/
+<br>
 
 ## Notable Engagements
 
