@@ -30,6 +30,8 @@ https://www.linkedin.com/in/nate-paradiso/
 
 
 Links to UX Team:
+<br>
 https://www.linkedin.com/in/inescanjura/
+<br>
 https://www.linkedin.com/in/chansteffi/
 
